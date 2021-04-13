@@ -1,1 +1,7 @@
 theme: jekyll-theme-minimal
+
+navbar:
+  title: "R-Space"
+  left:
+    - text: "Home"
+      href: index.html
