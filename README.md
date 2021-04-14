@@ -4,9 +4,9 @@ Link to [another-page](another-page)
 
 [another-classic-page](another-classic-page/classic-page)
 
-{{site.logo | relative_url}}
+{{"another-page" | relative_url}}
 
-{{ "/" | absolute_url }}
+{{ "/another-page" | absolute_url }}
 
 You can use the [editor on GitHub](https://github.com/ctreffe/alspace/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
