@@ -242,9 +242,9 @@ so lange wiederholen muss, bis er das korrekte Ergebnis eingegeben hat.**
 ### Aufgabe 2 zu Abschnitt 4
 
 **Erweitern Sie das Skript aus der vorherigen Aufgabe um eine 
-for-Schleife, sodass der Benutzer / die Benutzerin zunächst angeben 
-muss, wie viele Aufgaben er bearbeiten möchte. In der Folge soll der 
-Benutzer dann eine entsprechende Anzahl aufgaben bearbeiten müssen. 
+for-Schleife, sodass der:die Benutzer:in zunächst angeben 
+muss, wie viele Aufgaben er bearbeiten möchte. In der Folge soll der:die 
+Benutzer:in dann eine entsprechende Anzahl aufgaben bearbeiten müssen. 
 Alle anderen Teile des Skriptes sollen dabei bestehen bleiben.**
 
 [Hinweise zu den Aufgaben](exercise-hints.md)

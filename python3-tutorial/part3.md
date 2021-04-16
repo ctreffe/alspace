@@ -168,10 +168,10 @@ else:
 
 ### Aufgabe 1 zu Abschnitt 3
 
-**Erstellen Sie ein Skript, welches den Benutzer auffordert, zwei Zufallszahlen zwischen 1 und 100 
+**Erstellen Sie ein Skript, welches den:die Benutzer:in auffordert, zwei Zufallszahlen zwischen 1 und 100 
 zu addieren, die sie ihm anzeigen. Die Benutzereingabe soll dann mit der korrekten Lösung 
-verglichen werden. Melden Sie dem Benutzer zusammen mit seiner eigenen Eingabe zurück, 
-ob seine eingegebene Lösung korrekt ist oder nicht. Dem Benutzer soll die korrekte Lösung ebenfalls 
+verglichen werden. Melden Sie dem:der Benutzer:in zusammen mit seiner eigenen Eingabe zurück, 
+ob seine:ihre eingegebene Lösung korrekt ist oder nicht. Dem:Der Benutzer:in soll die korrekte Lösung ebenfalls 
 angezeigt werden.**
 
 [Hinweise zu den Aufgaben](exercise-hints.md)

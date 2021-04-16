@@ -76,7 +76,7 @@ print(liste[3:])  # gibt ab dem vierten Eintrag alle Listeneinträge zurück
 
 An den obigen Beispielen lassen sich zwei Besonderheiten erkennen, 
 die Python von einigen anderen Programmiersprachen (z.B. R) 
-unterscheidet und für viele Benutzer verwirrend wirken können:
+unterscheidet und für viele Benutzer:innen verwirrend wirken können:
 
 1. Die Zählung der Listeneinträge beginnt bei 0. Alle folgenden 
    Listeneinträge bekommen also einen Index, der sich um 1
@@ -181,7 +181,7 @@ fehlerfrei ausgeführt, auch wenn eine falsche Eingabe erfolgt ist.
 ### Aufgabe 1 zu Abschnitt 5
 
 **Bauen Sie das Skript aus Aufgabe 1 zum letzten Abschnitt so um, dass 
-der Benutzer / die Benutzerin nun 3 Aufgaben bearbeiten muss. 
+der:die Benutzer:in nun 3 Aufgaben bearbeiten muss. 
 Sie können hierfür eine for-Schleife verwenden. Lassen Sie allerdings 
 die zu addierenden Zahlen nicht wie zuvor innerhalb der for-Schleife 
 erzeugen. Erzeugen Sie stattdessen eine verschachtelte Liste oder eine 
@@ -192,7 +192,7 @@ dann über diese Liste**
 
 **Erweitern Sie das Skript aus der ersten Aufgabe in diesem Abschnitt 
 um einen try except Block, der die Eingabe auf Gültigkeit überprüft. 
-Sollte der Benutzer / die Benutzerin keine gültige Eingabe gemacht 
+Sollte der:die Benutzer:in keine gültige Eingabe gemacht 
 haben, soll er eine erneute Eingabe vornehmen müssen und eine 
 entsprechende Fehlermeldung angezeigt bekommen.**
 

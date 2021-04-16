@@ -206,7 +206,7 @@ ein Nutzer / eine Nutzerin zunächst zwei Zahlen
 (mit Kontrolle auf richtige Eingabe) eingeben. Diese Zahlen sollen dann 
 die Funktion durchlaufen. Die Funktion soll mittels print() Befehl den 
 Typ der Berechnung melden und als Returnwert das Ergebnis der Berechnung 
-zurückgeben. Dieses Ergebnis soll dem Benutzer am Ende angezeigt werden.**
+zurückgeben. Dieses Ergebnis soll dem:der Benutzer:in am Ende angezeigt werden.**
 
 ### Aufgabe 2 zu Abschnitt 6
 

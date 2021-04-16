@@ -11,9 +11,9 @@ Die Python Installationsdatei für **macOS** kann unter folgendem Link herunterg
 https://www.python.org/ftp/python/3.9.4/python-3.9.4-macos11.pkg
 
 Im Rahmen der Installation können zwei Optionen ausgewählt werden:
-1. Die Installation kann entweder für alle Benutzer/innen eines Rechners oder nur für den angemeldeten 
-   Benutzer/ die angemeldete Benutzerin durchgeführt werden. 
-   Wenn Python für **alle Benutzer/innen** installiert werden soll, muss die Option 
+1. Die Installation kann entweder für alle Benutzer:innen eines Rechners oder nur für den angemeldeten 
+   Benutzer oder die angemeldete Benutzerin durchgeführt werden. 
+   Wenn Python für **alle Benutzer:innen** installiert werden soll, muss die Option 
    "Install launcher für all users" ausgewählt werden. 
 2. Damit unsere Python Installation später problemlos von anderen Programmen 
    (z.B. unserer bevorzugten Entwicklungsumgebung) erkannt und genutzt werden kann, 
@@ -43,7 +43,7 @@ wurde und das "UI Theme" (z.B. Dracula) kann ausgewählt werden.
 Ein Script wird zunächst nicht benötigt, daher wird kein "Launcher Script" erstellt. 
 Die folgenden Plug-ins sind optional. <br>
 Im Anschluss kann die Option "New Project" ausgewählt werden. 
-Danach wird der Benutzende aufgefordert, eine "Location", also einen Speicherort und einen 
+Danach wird der:die Benutzende aufgefordert, eine "Location", also einen Speicherort und einen 
 Dateinamen festzulegen. Außerdem muss der Interpreter ausgewählt werden. Hierfür wird bei 
 "Existing interpreter" "Python 3.9" verwendet. 
 Weiterhin besteht die Möglichkeit, eine "main.py" zu erstellen. Diese Option wird nicht ausgewählt. 
@@ -114,7 +114,7 @@ input()
 
 Bei erneuter Ausführung des Skriptes aus dem Windows Explorer bleibt die Konsole nun geöffnet und 
 erwartet eine beliebige Benutzereingabe, die durch **Enter** bestätigt werden kann. 
-Sobald der Benutzer / die Benutzerin Enter drückt, beendet sich das Skript und die Konsole 
+Sobald der:die Benutzer:in Enter drückt, wird das Skript beendet und die Konsole 
 schließt sich.
 
 Die Funktion **input()** kann also unter anderem Skripte an beliebiger Stelle unterbrechen und 
