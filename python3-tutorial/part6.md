@@ -146,7 +146,7 @@ Validierung (while-Schleife mit darin verschachteltem try except Block)
 in eine Funktion ausgelagert wird, die nur eine korrekte Benutzereingabe
 zurückliefert**
 
-[Hinweise zu den Aufgaben](exercise-hints.md)
+[Hinweise zu den Aufgaben](part6_hints.md)
 
 [Lösungen zu den Aufgaben](part6_solution.md)
 

@@ -71,7 +71,7 @@ soll die Anzahl an derzeit verfügbaren Plätzen ausgegeben werden.
 Demonstrieren Sie die Funktionalitäten der Klasse, indem Sie das konkrete
 Objekt "Sozialpsychologie" erstellen.**
 
-[Hinweise zu den Aufgaben](exercise-hints.md)
+[Hinweise zu den Aufgaben](part7_hints.md)
 
 [Lösungen zu den Aufgaben](part7_solution.md)
 

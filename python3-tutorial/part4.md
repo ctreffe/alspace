@@ -226,7 +226,7 @@ muss, wie viele Aufgaben er bearbeiten möchte. In der Folge soll der:die
 Benutzer:in dann eine entsprechende Anzahl aufgaben bearbeiten müssen. 
 Alle anderen Teile des Skriptes sollen dabei bestehen bleiben.**
 
-[Hinweise zu den Aufgaben](exercise-hints.md)
+[Hinweise zu den Aufgaben](part4_hints.md)
 
 [Lösungen zu den Aufgaben](part4_solution.md)
 

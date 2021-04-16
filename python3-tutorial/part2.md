@@ -112,7 +112,9 @@ aus.**
 Ergebnisses auf. Geben Sie sowohl das eingegebene Ergebnis als auch das tatsächlich korrekte 
 Ergebnis in die Konsole.**
 
-[Hinweise zu den Aufgaben](exercise-hints.md)
+[comment]: <> ([Hinweise zu den Aufgaben]&#40;exercise-hints.md&#41;)
+
+[Hinweise zu den Aufgaben](part2_hints.md)
 
 [Lösungen zu den Aufgaben](part2_solution.md)
 

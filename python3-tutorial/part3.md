@@ -141,8 +141,8 @@ verglichen werden. Melden Sie dem:der Benutzer:in zusammen mit seiner eigenen Ei
 ob seine:ihre eingegebene Lösung korrekt ist oder nicht. Dem:Der Benutzer:in soll die korrekte Lösung ebenfalls 
 angezeigt werden.**
 
-[Hinweise zu den Aufgaben](exercise-hints.md)
+[Hinweise zu der Aufgabe](part3_hints.md)
 
-[Lösungen zu den Aufgaben](part3_solution.md)
+[Lösung der Aufgabe](part3_solution.md)
 
 [**Weiter zu Abschnitt 4**](part4.md)

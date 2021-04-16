@@ -1,4 +1,5 @@
 ## Abschnitt 2: Lösungen
+
 ### Aufgabe 1
 
 ```python

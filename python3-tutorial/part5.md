@@ -142,7 +142,7 @@ Sollte der:die Benutzer:in keine gültige Eingabe gemacht
 haben, soll er eine erneute Eingabe vornehmen müssen und eine 
 entsprechende Fehlermeldung angezeigt bekommen.**
 
-[Hinweise zu den Aufgaben](exercise-hints.md)
+[Hinweise zu den Aufgaben](part5_hints.md)
 
 [Lösungen zu den Aufgaben](part5_solution.md)
 
