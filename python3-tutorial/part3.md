@@ -33,7 +33,7 @@ print("Das korrekte Ergebnis: " + str(c))
 
 ## Abschnitt 3
 
-### Abschnitt 3.1 Zusatzmodule
+### 3.1 Zusatzmodule
 
 Die Standarddistribution kommt mit einer Reihe von Modulen, deren Funktionalität wir nutzen können. 
 Es gibt z.B. Module zur Bearbeitung von verschiedenen Dateiformaten, Module zur Durchführung 
@@ -53,7 +53,7 @@ print(a + b)
 Im obigen Beispiel laden wir das Zusatzmodul **random**, welches unter anderem Funktionen zur 
 Generierung von Zufallszahlen bereitstellt
 
-### Abschnitt 3.2 Vergleichsoperatoren
+### 3.2 Vergleichsoperatoren
 
 Bisher waren die von uns erstellten Skripte alle statisch und eindimensional. 
 Unabhängig von allen Einflussfaktoren tut jedes unserer bisherigen Skripte immer dasselbe. 
@@ -96,7 +96,7 @@ Man beachte im obigen Beispiel das einfache **=** als Zuweisung eines Wertes zu 
 Variablennamen und das doppelte **==** als Vergleichsoperator. Eine Verwechslung führt in aller 
 Regel zu einem Syntaxfehler und somit zum Abbruch der Skriptausführung.
 
-### Abschnitt 3.3 Verzweigungen
+### 3.3 Verzweigungen
 
 Um nun auf das Ergebnis von Vergleichsoperationen reagieren zu können, lassen sich Verzweigungen 
 mittels If-Anweisungen in unsere Skripte einbauen. Dabei wird ein bestimmter Codeblock nur dann 

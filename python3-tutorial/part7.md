@@ -92,9 +92,9 @@ for i in liste:
             print("Ihre eingegebene Lösung ist falsch! Bitte versuchen Sie es erneut:")
 ```
 
-## Abschnitt 7: Objektorientiertes Programmieren in Python - Klassen
+## Abschnitt 7
 
-### 7.1 Klassen
+### 7.1 Objektorientiertes Programmieren in Python – Klassen
 
 Klassen ermöglichen es in Python genau wie in anderen Programmiersprachen, 
 Variablen und Funktionen zu einer sinnvollen Einheit zu verbinden. 

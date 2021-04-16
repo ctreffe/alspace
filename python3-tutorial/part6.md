@@ -69,7 +69,8 @@ for i in liste:
             print("Ihre eingegebene Lösung ist falsch! Bitte versuchen Sie es erneut:")
 ```
 
-## Abschnitt 6: Funktionen
+## Abschnitt 6
+### 6.1 Funktionen
 
 Wir haben bislang eine ganze Reihe existierender Python-Funktionen genutzt.
 Dazu gehören z.B. **str()**, **input()**, **random.randint()** oder auch
@@ -158,7 +159,7 @@ print("Dies hier steht zwischen zwei Trennern")
 
 trenner()
 ```
-### Exkurs: Decorators
+### 6.2 Exkurs: Decorators
 Grundsätzlich ist ein **Decorator** eine Funktion, die eine andere Funktion als Argument entgegennimmt, 
 irgendeine Form von Funktionalität hinzufügt und dann eine andere Funktion zurückgibt, ohne dass 
 der Sourcecode der originalen Funktion (die entgegengenommen wurde) verändert wird.

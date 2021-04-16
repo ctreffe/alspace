@@ -54,7 +54,7 @@ for i in range(int(aufgabenzahl)):
 
 ## Abschnitt 5
 
-### Abschnitt 5.1 Mehr zu Listen, Tupeln und Dictionaries
+### 5.1 Mehr zu Listen, Tupeln und Dictionaries
 
 Bislang haben wir Listen nur im Zusammenhang mit der **for-Schleife** 
 kennengelernt. Häufig wollen wir aber nicht auf alle Elemente einer 
@@ -152,7 +152,7 @@ for i in dict_1:  # Ausgabe der zugeordneten Werte
     print(dict_1[i])
 ```
 
-### Abschnitt 5.2 Exception Handling in Python
+### 5.2 Exception Handling in Python
 
 Python bietet uns die Möglichkeit Fehler, die eigentlich zu einem 
 Abbruch der Skriptausführung führen würden, gezielt abzufangen und eine 

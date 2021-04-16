@@ -21,7 +21,7 @@ else:
 
 ## Abschnitt 4
 
-### Abschnitt 4.1 Verbindung von Vergleichsoperationen
+### 4.1 Verbindung von Vergleichsoperationen
 
 Wir können durch ein paar Erweiterungen auch komplexere Vergleichsoperationen als die bisherigen 
 einfachen Vergleiche durchführen:
@@ -89,7 +89,7 @@ check = not 1 <= c and not c < a + b  # Das Ergebnis der Berechnung liegt zwisch
 print(check)
 ```
 
-### Abschnitt 4.2 Schleifen
+### 4.2 Schleifen
 
 Schleifen ermöglichen es uns Codeblöcke wiederholt auszuführen. 
 Die Anzahl der Wiederholungen (Iterationen) kann dabei im Vorfeld 

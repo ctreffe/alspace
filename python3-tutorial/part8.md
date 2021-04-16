@@ -28,9 +28,9 @@ Sozialpsychologie.maximale_kapazitaet()
 Sozialpsychologie.belegte_plaetze()
 Sozialpsychologie.freie_plaetze()
 ```
-## Abschnitt 8: Objektorientiertes Programmieren in Python - Ausblick
+## Abschnitt 8
 
-### 8.1 Ausblick
+### 8.1 Objektorientiertes Programmieren in Python – Ausblick
 
 Python als Programmiersprache bringt verschiedene Vorteile gegenüber einfacheren Skriptsprachen (z.B. CLEM):
 
