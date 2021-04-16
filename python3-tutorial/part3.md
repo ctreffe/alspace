@@ -29,9 +29,9 @@ reagieren, d.h. Benutzereingaben oder vorhandene Daten müssen abgeglichen und b
 
 Zur Durchführung von Abgleichen gibt es in Python die üblichen Vergleichsoperatoren:
 
-* > größer als
+* \> größer als
 * < kleiner als
-* >= größer gleich
+* \>= größer gleich
 * <= kleiner gleich
 * == gleich
 * != ungleich
