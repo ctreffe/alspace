@@ -1,6 +1,6 @@
-## Abschnitt 8
+## Abschnitt 8: Objektorientiertes Programmieren in Python
 
-### 8.1 Objektorientiertes Programmieren in Python – Ausblick
+### 8.1 Ausblick
 
 Python als Programmiersprache bringt verschiedene Vorteile gegenüber einfacheren Skriptsprachen (z.B. CLEM):
 

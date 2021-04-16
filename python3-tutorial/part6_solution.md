@@ -1,4 +1,4 @@
-## Abschnitt 6 – Lösungen
+## Abschnitt 6: Lösungen
 ### Aufgabe 1
 
 ```python

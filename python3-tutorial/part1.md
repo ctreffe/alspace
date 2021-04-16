@@ -1,4 +1,4 @@
-## Abschnitt 1: Installation einer Python-Distribution mit passender Entwicklungsumgebung
+## Abschnitt 1: Vorbereitung
 
 Im Folgenden werden wir in wenigen einfachen Schritten die Standarddistribution von Python installieren und anschließend eine geeignete Entwicklungsumgebung zum Erstellen einfacher Pythonskripte hinzufügen.
 
@@ -22,7 +22,7 @@ Im Rahmen der Installation können zwei Optionen ausgewählt werden:
 Danach kann Python per Klick auf "Install Now" in das Standardverzeichnis (C:\Python39) 
 installiert werden.
 
-### 1.2 Installieren von PyCharm
+### 1.2 Installieren der passenden Entwicklungsumgebung (PyCharm)
 
 Mit der Python Standarddistribution wird eine Entwicklungsumgebung namens *IDLE* installiert. 
 Da diesem Editor jedoch wichtige Kernfeatures (z.B. die Möglichkeit zu horizontalem Scrollen in 

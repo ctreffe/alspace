@@ -1,6 +1,6 @@
-## Abschnitt 7
+## Abschnitt 7: Objektorientiertes Programmieren in Python
 
-### 7.1 Objektorientiertes Programmieren in Python – Klassen
+### 7.1 Klassen
 
 Klassen ermöglichen es in Python genau wie in anderen Programmiersprachen, 
 Variablen und Funktionen zu einer sinnvollen Einheit zu verbinden. 

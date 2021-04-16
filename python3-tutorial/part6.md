@@ -1,4 +1,4 @@
-## Abschnitt 6
+## Abschnitt 6: Funktionen und Decorators
 ### 6.1 Funktionen
 
 Wir haben bislang eine ganze Reihe existierender Python-Funktionen genutzt.

@@ -1,4 +1,4 @@
-## Abschnitt 3
+## Abschnitt 3: Basiskonzepte des Programmierens
 
 ### 3.1 Zusatzmodule
 

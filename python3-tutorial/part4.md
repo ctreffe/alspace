@@ -1,4 +1,4 @@
-## Abschnitt 4
+## Abschnitt 4: Basiskonzepte des Programmierens
 
 ### 4.1 Verbindung von Vergleichsoperationen
 
