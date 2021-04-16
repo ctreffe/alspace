@@ -114,4 +114,6 @@ Ergebnis in die Konsole.**
 
 [Hinweise zu den Aufgaben](exercise-hints.md)
 
+[Lösungen zu den Aufgaben](part2_solution.md)
+
 [**Weiter zu Abschnitt 3**](part3.md)

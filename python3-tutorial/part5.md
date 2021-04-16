@@ -1,57 +1,3 @@
-### Lösung zu Abschnitt 4 Aufgabe 1
-
-```python
-import random
-
-a = random.randint(1, 100)
-b = random.randint(1, 100)
-
-c = a + b
-correct = False
-
-print("Bitte rechnen Sie die folgende Aufgabe: " + str(a) + " + " + str(b) + ": ")
-
-while not correct:
-    eingabe = input()
-    print("Ihre Eingabe: " + str(eingabe))
-
-    if int(eingabe) == c:
-        print("Ihre eingegebene Lösung ist korrekt!")
-        correct = True
-    else:
-        print("Ihre eingegebene Lösung ist falsch! Bitte versuchen sie es erneut:")
-```
-
-### Lösung zu Abschnitt 4 Aufgabe 2
-
-```python
-import random
-
-print("Wie viele Aufgaben wollen Sie berechnen? Bitte eingeben:")
-
-aufgabenzahl = input()
-
-for i in range(int(aufgabenzahl)):
-
-    a = random.randint(1, 100)
-    b = random.randint(1, 100)
-
-    c = a + b
-    correct = False
-
-    print("Bitte rechnen Sie die folgende Aufgabe: " + str(a) + " + " + str(b) + ": ")
-
-    while not correct:
-        eingabe = input()
-        print("Ihre Eingabe: " + str(eingabe))
-
-        if int(eingabe) == c:
-            print("Ihre eingegebene Lösung ist korrekt!")
-            correct = True
-        else:
-            print("Ihre eingegebene Lösung ist falsch! Bitte versuchen sie es erneut:")
-```
-
 ## Abschnitt 5
 
 ### 5.1 Mehr zu Listen, Tupeln und Dictionaries
@@ -197,5 +143,7 @@ haben, soll er eine erneute Eingabe vornehmen müssen und eine
 entsprechende Fehlermeldung angezeigt bekommen.**
 
 [Hinweise zu den Aufgaben](exercise-hints.md)
+
+[Lösungen zu den Aufgaben](part5_solution.md)
 
 [**Weiter zu Abschnitt 6**](part6.md)

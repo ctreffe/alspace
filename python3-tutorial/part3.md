@@ -1,36 +1,3 @@
-### Lösung zu Abschnitt 2 Aufgabe 1
-
-```python
-# Eingabe
-
-print("Bitte Zahl eingeben: ")
-eingabe = input()
-
-# Verarbeitung
-
-ergebnis = 12 + float(eingabe)
-
-# Ausgabe
-
-print("Das Ergebnis der Addition lautet: "+ str(ergebnis))
-print(type(ergebnis))
-```
-
-### Lösung zu Abschnitt 2 Aufgabe 2
-
-```python
-a = 5
-b = 4
-
-c = a+b
-
-print("Bitte rechnen sie folgende Aufgabe: 5 + 4:")
-eingabe = input()
-
-print("Ihre Eingabe: " + eingabe)
-print("Das korrekte Ergebnis: " + str(c)) 
-```
-
 ## Abschnitt 3
 
 ### 3.1 Zusatzmodule
@@ -175,5 +142,7 @@ ob seine:ihre eingegebene Lösung korrekt ist oder nicht. Dem:Der Benutzer:in so
 angezeigt werden.**
 
 [Hinweise zu den Aufgaben](exercise-hints.md)
+
+[Lösungen zu den Aufgaben](part3_solution.md)
 
 [**Weiter zu Abschnitt 4**](part4.md)

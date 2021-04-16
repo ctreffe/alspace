@@ -1,24 +1,3 @@
-### Lösung zu Abschnitt 3 Aufgabe 1
-
-```python
-import random
-
-a = random.randint(1, 100)
-b = random.randint(1, 100)
-
-c = a + b
-
-print("Bitte rechnen Sie die folgende Aufgabe: " + str(a) + " + " + str(b) + ": ")
-eingabe = input()
-
-print("Ihre Eingabe: " + str(eingabe))
-
-if int(eingabe) == c:
-    print("Ihre eingegebene Lösung ist korrekt!")
-else:
-    print("Leider ist die eingegebene Lösung nicht korrekt. Die korrekte Lösung lautet: " + str(c))
-```
-
 ## Abschnitt 4
 
 ### 4.1 Verbindung von Vergleichsoperationen
@@ -248,5 +227,7 @@ Benutzer:in dann eine entsprechende Anzahl aufgaben bearbeiten müssen.
 Alle anderen Teile des Skriptes sollen dabei bestehen bleiben.**
 
 [Hinweise zu den Aufgaben](exercise-hints.md)
+
+[Lösungen zu den Aufgaben](part4_solution.md)
 
 [**Weiter zu Abschnitt 5**](part5.md)
