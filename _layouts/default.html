@@ -34,10 +34,8 @@
       </section>
 
       <footer>
-        <p><small>Created by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a> and hosted on GitHub Pages</small></p>
-
         <!-- Optional: Remove this for private repositories -->
-        <small><p id="last-modified"></p></small>
+        <p id="last-modified"></p>
       </footer>
     </div>
 
@@ -60,9 +58,11 @@
           })
           .then((commits) => {
             var modified = commits[0]['commit']['committer']['date'].slice(0,10);
+            var author = commits[0]['committer']['login'];
+            var author_url = commits[0]['committer']['html_url'];
             // Temporary test logging
             console.log(commits[0]);
-            document.getElementById('last-modified').textContent = "Updated: " + modified;
+            document.getElementById('last-modified').innerHTML = "<small>Latest version committed on <b>" + modified + "</b> by <b><a href=" + author_url + ">" + author + "</a></b>.</small>";
           });
       }
     </script>
