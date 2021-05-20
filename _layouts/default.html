@@ -61,7 +61,7 @@
           .then((commits) => {
             var modified = commits[0]['commit']['committer']['date'].slice(0,10);
             // Temporary test logging
-            console.log(commits[0].toString());
+            console.log(commits[0]);
             document.getElementById('last-modified').textContent = "Updated: " + modified;
           });
       }
