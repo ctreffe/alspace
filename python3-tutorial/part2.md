@@ -114,8 +114,8 @@ Ergebnis in die Konsole.**
 
 [comment]: <> ([Hinweise zu den Aufgaben]&#40;exercise-hints.md&#41;)
 
-[Hinweise zu den Aufgaben](part2_hints.md)
+<a href="part2_hints" class="btn btn-primary btn-lg" tabindex="1" role="button" aria-disabled="true">Hinweise zu den Aufgaben</a>
 
-[Lösungen zu den Aufgaben](part2_solution.md)
+<a href="part2_solutions" class="btn btn-primary btn-lg" tabindex="2" role="button" aria-disabled="true">Lösungen zu den Aufgaben</a>
 
-[**Weiter zu Abschnitt 3**](part3.md)
+<a href="part3" class="btn btn-primary btn-lg" tabindex="3" role="button" aria-disabled="true">Weiter zu Abschnitt 3</a>
