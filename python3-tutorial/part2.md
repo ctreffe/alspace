@@ -99,7 +99,6 @@ geliefert, der per **print()** automatisch in einen String umwandeln und gut aus
 Der Rückgabewert von Type lässt sich übrigens nicht mit anderen Strings durch den Operator **+** 
 verbinden!
 
-<p class="alert alert-info" role="alert">
 ### Aufgabe 1 zu Abschnitt 2
 
 **Schreiben Sie ein Skript, welches eine von Ihnen eingegebene Zahl zur Ganzzahl 12 addiert. 
@@ -112,10 +111,9 @@ aus.**
 (Sie können die Werte dieser Ganzzahlen selbst festlegen). Fordern Sie zur Eingabe des korrekten 
 Ergebnisses auf. Geben Sie sowohl das eingegebene Ergebnis als auch das tatsächlich korrekte 
 Ergebnis in die Konsole.**
-</p>
 
 <a href="part2_hints" class="btn btn-primary btn-lg" tabindex="1" role="button" aria-disabled="true">Hinweise zu den Aufgaben</a>
 
-<a href="part2_solutions" class="btn btn-primary btn-lg" tabindex="2" role="button" aria-disabled="true">Lösungen zu den Aufgaben</a>
+<a href="part2_solution" class="btn btn-primary btn-lg" tabindex="2" role="button" aria-disabled="true">Lösungen zu den Aufgaben</a>
 
 <a href="part3" class="btn btn-primary btn-lg" tabindex="3" role="button" aria-disabled="true">Weiter zu Abschnitt 3</a>
