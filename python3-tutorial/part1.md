@@ -120,4 +120,4 @@ schließt sich.
 Die Funktion **input()** kann also unter anderem Skripte an beliebiger Stelle unterbrechen und 
 erst nach manueller Bestätigung fortsetzen.
 
-[**Weiter zu Abschnitt 2**](part2.md)
+**[Weiter zu Abschnitt 2](part2.md)**
