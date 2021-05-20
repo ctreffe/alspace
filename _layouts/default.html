@@ -1,40 +1,66 @@
 <!DOCTYPE html>
+<!-- When using this theme in a repository, you should remove the comments from this file -->
+<!-- GitHub uses a Jinja style syntax to insert content and additional data: {{ xxx }} -->
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
+    <!-- The following meta tags are required by Bootstrap -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Adding our own stylesheet from the repository -->
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
   </head>
   
   <body>
     <div class="wrapper">
+      <!-- The following header is displayed as sitebar on the left -->
       <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+        <h1><a href="{{ "/" | absolute_url }}">{{ site.github.owner_name }}/{{ site.title | default: site.github.repository_name }}</a></h1>
         
-        <p>Demo Website Created from Readmes</p>
+        <!-- This text might need adjustment when the theme is used in a repository -->
+        <p><small><b>Caution:</b> This page was generated and shared from a private repository and might be accessible only for a limited period of time. Links referring to unshared documents and files within the repository are not functional.</small></p>
 
-        <p class="view"><a href="{{ "page1" | absolute_url }}">View Page 1</a></p>
-        <p class="view"><a href="{{ "page1/subpage1" | absolute_url }}">View Subpage 1</a></p>
-        <p class="view"><a href="{{ "page2" | absolute_url }}">View Page 2</a></p>
-
-        {% if site.github.is_project_page %}
-        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
-        {% endif %}
+        <p id="pagelink"></p>
 
       </header>
+
       <section>
 
       {{ content }}
 
       </section>
+
       <footer>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p id="last-modified"></p>
+
+        <p><small>Created by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a> and hosted on GitHub Pages</small></p>
       </footer>
     </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+
+    <!-- The following script seems to be an iPhone specific fix for gestures and might be outdated -->
+    <!-- Trying without this: <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script> -->
+
+    <!-- Adds a link to the current page to the sitebar -->
+    <script>document.getElementById("pagelink").innerHTML = '<small>Currently available at:<br><a href="' + window.location.href + '" style="word-wrap:break-word;">' + window.location.href + '</a></small>';</script>
+    
+    <!-- Adds Bootstrap 5 Javascript and Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Adds date of last update for the page as described here: https://ryanfb.github.io/etc/2020/04/27/last_modified_dates_for_github_pages_jekyll_posts.html -->
+    <script>
+      if (document.getElementById('last-modified')) {
+        fetch("https://api.github.com/repos/{{ site.github.owner_name }}/{{ site.github.repository_name }}/commits?path={{ page.path }}")
+          .then((response) => {
+            return response.json();
+          })
+          .then((commits) => {
+            var modified = commits[0]['commit']['committer']['date'].slice(0,10);
+            document.getElementById('last-modified').textContent = "<small>Last Modified: " + modified + "</small";
+          });
+      }
+    </script>
   </body>
 </html>
