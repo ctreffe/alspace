@@ -59,7 +59,7 @@
             var author_url = commits[0]['committer']['html_url'];
             // Temporary test logging
             console.log(commits[0]);
-            document.getElementById('last-modified').innerHTML = "<small>Latest version committed on <b>" + modified + "</b> by <b><a href=" + author_url + ">" + author + "</a></b>.</small>";
+            document.getElementById('last-modified').innerHTML = "<small>Latest version committed on <b>" + modified + "</b> by <a href=" + author_url + ">" + author + "</a></small>";
           });
       }
     </script>
