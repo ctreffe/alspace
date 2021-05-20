@@ -34,7 +34,8 @@
       </section>
 
       <footer>
-        <p id="last-modified"></p>
+        <!-- Optional: Remove this for private repositories -->
+        <small><p id="last-modified"></p></small>
 
         <p><small>Created by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a> and hosted on GitHub Pages</small></p>
       </footer>
@@ -50,6 +51,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
     <!-- Adds date of last update for the page as described here: https://ryanfb.github.io/etc/2020/04/27/last_modified_dates_for_github_pages_jekyll_posts.html -->
+    <!-- Only use this in public repositories as api.github.com does not work this way for private repositories -->
     <script>
       if (document.getElementById('last-modified')) {
         fetch("https://api.github.com/repos/{{ site.github.owner_name }}/{{ site.github.repository_name }}/commits?path={{ page.path }}")
@@ -58,7 +60,7 @@
           })
           .then((commits) => {
             var modified = commits[0]['commit']['committer']['date'].slice(0,10);
-            document.getElementById('last-modified').textContent = "<small>Last Modified: " + modified + "</small";
+            document.getElementById('last-modified').textContent = "Last Modified: " + modified;
           });
       }
     </script>
