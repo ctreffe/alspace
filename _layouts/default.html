@@ -21,7 +21,7 @@
         <h1><a href="{{ "/" | absolute_url }}">{{ site.github.owner_name }}/{{ site.title | default: site.github.repository_name }}</a></h1>
         
         <!-- This text might need adjustment when the theme is used in a repository -->
-        <p><small><b>Caution:</b> This page was generated and shared from a private repository and might be accessible only for a limited period of time. Links referring to unshared documents and files within the repository are not functional.</small></p>
+        <p><small>Scripts and Tutorials for alfred3.</small></p>
 
         <p id="pagelink"></p>
 
@@ -43,10 +43,7 @@
     <!-- Trying without this: <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script> -->
 
     <!-- Adds a link to the current page to the sitebar -->
-    <script>document.getElementById("pagelink").innerHTML = '<small>Currently available at:<br><a href="' + window.location.href + '" style="word-wrap:break-word;">' + window.location.href + '</a></small>';</script>
-    
-    <!-- Adds Bootstrap 5 Javascript and Plugins -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script>document.getElementById("pagelink").innerHTML = '<small>Link to this page:<br><a href="' + window.location.href + '" style="word-wrap:break-word;">' + window.location.href + '</a></small>';</script>
 
     <!-- Adds date of last update for the page as described here: https://ryanfb.github.io/etc/2020/04/27/last_modified_dates_for_github_pages_jekyll_posts.html -->
     <!-- Only use this in public repositories as api.github.com does not work this way for private repositories -->
@@ -66,5 +63,8 @@
           });
       }
     </script>
+    
+    <!-- Adds Bootstrap 5 Javascript and Plugins. Should be loaded last! -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   </body>
 </html>
