@@ -54,5 +54,3 @@ for i in range(int(aufgabenzahl)):
 ```
 
 [Zurück zu Abschnitt 4](part4.md)
-
-[**Weiter zu Abschnitt 5**](part5.md)

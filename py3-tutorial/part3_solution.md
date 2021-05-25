@@ -21,5 +21,3 @@ else:
 ```
 
 [Zurück zu Abschnitt 3](part3.md)
-
-[**Weiter zu Abschnitt 4**](part4.md)

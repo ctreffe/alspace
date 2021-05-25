@@ -94,5 +94,3 @@ for i in liste:
 ```
 
 [Zurück zu Abschnitt 6](part6.md)
-
-[**Weiter zu Abschnitt 7**](part7.md)

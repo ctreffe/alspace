@@ -34,5 +34,3 @@ print("Das korrekte Ergebnis: " + str(c))
 ```
 
 [Zurück zu Abschnitt 2](part2.md)
-
-[**Weiter zu Abschnitt 3**](part3.md)

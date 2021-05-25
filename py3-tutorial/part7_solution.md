@@ -29,6 +29,5 @@ Sozialpsychologie.maximale_kapazitaet()
 Sozialpsychologie.belegte_plaetze()
 Sozialpsychologie.freie_plaetze()
 ```
-[Zurück zu Abschnitt 7](part7.md)
 
-[**Weiter zu Abschnitt 8**](part8.md)
+[Zurück zu Abschnitt 7](part7.md)
