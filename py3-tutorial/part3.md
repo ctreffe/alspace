@@ -1,3 +1,7 @@
+---
+layout: py3_tutorial
+---
+
 ## Abschnitt 3: Basiskonzepte des Programmierens
 
 ### 3.1 Zusatzmodule
@@ -141,8 +145,12 @@ verglichen werden. Melden Sie dem:der Benutzer:in zusammen mit seiner eigenen Ei
 ob seine:ihre eingegebene Lösung korrekt ist oder nicht. Dem:Der Benutzer:in soll die korrekte Lösung ebenfalls 
 angezeigt werden.**
 
-[Hinweise zu der Aufgabe](part3_hints.md)
+<div class="d-grid gap-2 d-md-block">
+  <a href="part2" class="btn btn-secondary btn-sm" tabindex="1" role="button" aria-disabled="true">Zurück zu Abschnitt 2</a>
 
-[Lösung der Aufgabe](part3_solution.md)
+  <a href="part3_hints" class="btn btn-primary btn-lg" tabindex="2" role="button" aria-disabled="true">Hinweise zu den Aufgaben</a>
 
-[**Weiter zu Abschnitt 4**](part4.md)
+  <a href="part3_solution" class="btn btn-primary btn-lg" tabindex="3" role="button" aria-disabled="true">Lösungen zu den Aufgaben</a>
+
+  <a href="part4" class="btn btn-secondary btn-sm" tabindex="4" role="button" aria-disabled="true">Weiter zu Abschnitt 4</a>
+</div>

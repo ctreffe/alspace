@@ -1,3 +1,7 @@
+---
+layout: py3_tutorial
+---
+
 ## Abschnitt 1: Vorbereitung
 
 Im Folgenden werden wir in wenigen einfachen Schritten die Standarddistribution von Python installieren und anschließend eine geeignete Entwicklungsumgebung zum Erstellen einfacher Pythonskripte hinzufügen.
@@ -120,4 +124,8 @@ schließt sich.
 Die Funktion **input()** kann also unter anderem Skripte an beliebiger Stelle unterbrechen und 
 erst nach manueller Bestätigung fortsetzen.
 
-**[Weiter zu Abschnitt 2](part2.md)**
+<div class="d-grid gap-2 d-md-block">
+  <a href="../py3-tutorial" class="btn btn-secondary btn-sm" tabindex="1" role="button" aria-disabled="true">Zurück zur Startseite</a>
+
+  <a href="part2" class="btn btn-secondary btn-sm" tabindex="1" role="button" aria-disabled="true">Weiter zu Abschnitt 2</a>
+</div>

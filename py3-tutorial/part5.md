@@ -1,3 +1,7 @@
+---
+layout: py3_tutorial
+---
+
 ## Abschnitt 5: Basiskonzepte des Programmierens
 
 ### 5.1 Mehr zu Listen, Tupeln und Dictionaries
@@ -142,8 +146,12 @@ Sollte der:die Benutzer:in keine gültige Eingabe gemacht
 haben, soll er eine erneute Eingabe vornehmen müssen und eine 
 entsprechende Fehlermeldung angezeigt bekommen.**
 
-[Hinweise zu den Aufgaben](part5_hints.md)
+<div class="d-grid gap-2 d-md-block">
+  <a href="part4" class="btn btn-secondary btn-sm" tabindex="1" role="button" aria-disabled="true">Zurück zu Abschnitt 4</a>
 
-[Lösungen zu den Aufgaben](part5_solution.md)
+  <a href="part5_hints" class="btn btn-primary btn-lg" tabindex="2" role="button" aria-disabled="true">Hinweise zu den Aufgaben</a>
 
-[**Weiter zu Abschnitt 6**](part6.md)
+  <a href="part5_solution" class="btn btn-primary btn-lg" tabindex="3" role="button" aria-disabled="true">Lösungen zu den Aufgaben</a>
+
+  <a href="part6" class="btn btn-secondary btn-sm" tabindex="4" role="button" aria-disabled="true">Weiter zu Abschnitt 6</a>
+</div>

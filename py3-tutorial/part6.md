@@ -1,4 +1,9 @@
-## Abschnitt 6: Funktionen und Decorators
+---
+layout: py3_tutorial
+---
+
+## Abschnitt 6: Funktionen und Dekoratoren
+
 ### 6.1 Funktionen
 
 Wir haben bislang eine ganze Reihe existierender Python-Funktionen genutzt.
@@ -146,10 +151,12 @@ Validierung (while-Schleife mit darin verschachteltem try except Block)
 in eine Funktion ausgelagert wird, die nur eine korrekte Benutzereingabe
 zurückliefert**
 
-[Hinweise zu den Aufgaben](part6_hints.md)
+<div class="d-grid gap-2 d-md-block">
+  <a href="part5" class="btn btn-secondary btn-sm" tabindex="1" role="button" aria-disabled="true">Zurück zu Abschnitt 5</a>
 
-[Lösungen zu den Aufgaben](part6_solution.md)
+  <a href="part6_hints" class="btn btn-primary btn-lg" tabindex="2" role="button" aria-disabled="true">Hinweise zu den Aufgaben</a>
 
-[**Weiter zu Abschnitt 7**](part7.md)
+  <a href="part6_solution" class="btn btn-primary btn-lg" tabindex="3" role="button" aria-disabled="true">Lösungen zu den Aufgaben</a>
 
-
+  <a href="part7" class="btn btn-secondary btn-sm" tabindex="4" role="button" aria-disabled="true">Weiter zu Abschnitt 7</a>
+</div>

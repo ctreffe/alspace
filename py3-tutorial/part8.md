@@ -1,8 +1,12 @@
+---
+layout: py3_tutorial
+---
+
 ## Abschnitt 8: Objektorientiertes Programmieren in Python
 
 ### 8.1 Ausblick
 
-Python als Programmiersprache bringt verschiedene Vorteile gegenüber einfacheren Skriptsprachen (z.B. CLEM):
+Python als Programmiersprache bringt verschiedene Vorteile gegenüber einfacheren Skriptsprachen:
 
 #### Klassen- und Funktionsdefinitionen
 
@@ -31,4 +35,8 @@ Python als Programmiersprache bringt verschiedene Vorteile gegenüber einfachere
     * Bereitstellung grafischer Benutzeroberflächen
 * Durch die Vielfalt an Erweiterungspaketen wird Python zu einer sehr mächtigen Scriptingsprache
 
-[**Zurück zur Startseite**](../python3-tutorial)
+<div class="d-grid gap-2 d-md-block">
+  <a href="part7" class="btn btn-secondary btn-sm" tabindex="1" role="button" aria-disabled="true">Zurück zu Abschnitt 7</a>
+
+  <a href="../py3-tutorial" class="btn btn-secondary btn-sm" tabindex="2" role="button" aria-disabled="true">Zur Startseite</a>
+</div>

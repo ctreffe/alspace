@@ -1,3 +1,7 @@
+---
+layout: py3_tutorial
+---
+
 ## Abschnitt 7: Objektorientiertes Programmieren in Python
 
 ### 7.1 Klassen
@@ -71,8 +75,12 @@ soll die Anzahl an derzeit verfügbaren Plätzen ausgegeben werden.
 Demonstrieren Sie die Funktionalitäten der Klasse, indem Sie das konkrete
 Objekt "Sozialpsychologie" erstellen.**
 
-[Hinweise zu den Aufgaben](part7_hints.md)
+<div class="d-grid gap-2 d-md-block">
+  <a href="part6" class="btn btn-secondary btn-sm" tabindex="1" role="button" aria-disabled="true">Zurück zu Abschnitt 6</a>
 
-[Lösungen zu den Aufgaben](part7_solution.md)
+  <a href="part7_hints" class="btn btn-primary btn-lg" tabindex="2" role="button" aria-disabled="true">Hinweise zu den Aufgaben</a>
 
-[**Weiter zu Abschnitt 8**](part8.md)
+  <a href="part7_solution" class="btn btn-primary btn-lg" tabindex="3" role="button" aria-disabled="true">Lösungen zu den Aufgaben</a>
+
+  <a href="part8" class="btn btn-secondary btn-sm" tabindex="4" role="button" aria-disabled="true">Weiter zu Abschnitt 8</a>
+</div>
