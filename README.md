@@ -1,5 +1,7 @@
 # Resources for alfred3: ctreffe/alspace 
 
-## Python 3 Tutorial (German)
+This website will offer a collection of helpful resources for users of alfred3. As we are currently building up the page, the content is very limited. 
 
-[Start](python3-tutorial)
+## Current Content
+
+[Python 3 Beginners Tutorial (German)](py3-tutorial)
