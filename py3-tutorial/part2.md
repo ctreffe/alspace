@@ -2,7 +2,7 @@
 layout: py3_tutorial
 ---
 
-## Abschnitt 2: Basiskonzepte des Programmierens
+## Abschnitt 2
 
 Im Folgenden werden wir, analog zum Buch **Einstieg in Python**, ein eigenes Spiel entwickeln, 
 welches wir Schritt für Schritt um neue Konzepte der Programmiersprache Python erweitern. 

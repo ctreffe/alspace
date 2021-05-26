@@ -2,7 +2,7 @@
 layout: py3_tutorial
 ---
 
-## Abschnitt 7: Objektorientiertes Programmieren in Python
+## Abschnitt 7
 
 ### 7.1 Klassen
 

@@ -2,7 +2,7 @@
 layout: py3_tutorial
 ---
 
-## Abschnitt 3: Basiskonzepte des Programmierens
+## Abschnitt 3
 
 ### 3.1 Zusatzmodule
 

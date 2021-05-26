@@ -2,7 +2,7 @@
 layout: py3_tutorial
 ---
 
-## Abschnitt 5: Basiskonzepte des Programmierens
+## Abschnitt 5
 
 ### 5.1 Mehr zu Listen, Tupeln und Dictionaries
 

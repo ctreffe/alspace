@@ -2,7 +2,7 @@
 layout: py3_tutorial
 ---
 
-## Abschnitt 4: Basiskonzepte des Programmierens
+## Abschnitt 4
 
 ### 4.1 Verbindung von Vergleichsoperationen
 

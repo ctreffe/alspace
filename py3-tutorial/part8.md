@@ -2,7 +2,7 @@
 layout: py3_tutorial
 ---
 
-## Abschnitt 8: Objektorientiertes Programmieren in Python
+## Abschnitt 8 - !Under Construction!
 
 ### 8.1 Ausblick
 

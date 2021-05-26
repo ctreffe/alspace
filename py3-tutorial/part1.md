@@ -2,7 +2,7 @@
 layout: py3_tutorial
 ---
 
-## Abschnitt 1: Vorbereitung
+## Abschnitt 1
 
 Im Folgenden werden wir in wenigen einfachen Schritten die Standarddistribution von Python installieren und anschließend eine geeignete Entwicklungsumgebung zum Erstellen einfacher Pythonskripte hinzufügen.
 

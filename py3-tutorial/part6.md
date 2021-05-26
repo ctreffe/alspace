@@ -2,7 +2,7 @@
 layout: py3_tutorial
 ---
 
-## Abschnitt 6: Funktionen und Dekoratoren
+## Abschnitt 6
 
 ### 6.1 Funktionen
 
@@ -93,6 +93,7 @@ print("Dies hier steht zwischen zwei Trennern")
 
 trenner()
 ```
+<!-- 
 ### 6.2 Exkurs: Decorators
 Grundsätzlich ist ein **Decorator** eine Funktion, die eine andere Funktion als Argument entgegennimmt, 
 irgendeine Form von Funktionalität hinzufügt und dann eine andere Funktion zurückgibt, ohne dass 
@@ -132,6 +133,7 @@ def orig_func():
 
 orig_func()
 ```
+-->
 
 ### Aufgabe 1 zu Abschnitt 6
 
