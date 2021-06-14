@@ -858,7 +858,7 @@ DROPZONE_PARRALEL_UPLOAD = True
 DROPZONE_TIMEOUT = 300000 # 5 minutes
 ```
  
-In dieser Datei sollte vor allem auf die Übernahme der korrekten Benutzerdaten für die MongoDB geachtet werden. Außerdem braucht jede Instanz von Mortimer einen geeigneten _Secret\_Key_, der bestimmten Anforderungen entsprechen muss.
+In dieser Datei sollte vor allem auf die Übernahme der korrekten Benutzerdaten für die MongoDB geachtet werden. Außerdem braucht jede Instanz von Mortimer einen geeigneten _Secret\_Key_ (Must be URL-safe base64-encoded 32-byte key for fernet encryption in STR (NOT in bytes)).
 
 ## Mortimer über den Apache 2 Webserver erreichbar machen
 
@@ -885,8 +885,8 @@ Nun kann die von CertBot bereits erstellte und von uns angepasste vHost-Konfigur
         # value is not decisive as it is used as a last resort host regardless.
         # However, you must set it for any further virtual host explicitly.
         #ServerName www.example.com
-        ServerName alfredo3.psych.bio.uni-goettingen.de
-        ServerAdmin alfred@psych.uni-goettingen.de
+        ServerName <SERVERNAME>
+        ServerAdmin <SERVERADMIN>
         DocumentRoot /var/www
 
         <Directory /var/www/files>
