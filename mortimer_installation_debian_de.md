@@ -6,9 +6,9 @@ author_url: https://github.com/ctreffe
 
 # Installation von Alfred3 und Mortimer unter Debian 10
 
-Die folgende Anleitung setzt die Verfügbarkeit einer virtuellen Maschine zur eigenen Einrichtung voraus. Diese Maschine sollte über eine feste IP-Adresse sowie über eine DNS-Adresse (Domain) verfügen. Letzteres ist für die Erstellung eines SSL-Zertifikats mit Let's Encrypt notwendig.
+Die folgende Anleitung setzt die Verfügbarkeit eis Servers mit aktueller Debian-Installation voraus. Diese Maschine sollte über eine feste IP-Adresse sowie über eine DNS-Adresse (Domain) verfügen. Letzteres ist für die Erstellung eines SSL-Zertifikats mit Let's Encrypt notwendig.
 
-## Einrichtung von Debian
+## Einrichtung von Debian - Optionale Software
 
 * Wir benötigen von Beginn an einen geeigneten Texteditor, um das
   Betriebssystem einrichten zu können. Falls man dafür mit _Vim_ arbeiten möchte, muss man den Editor als erstes installieren. Dazu loggen wir uns mit dem Root-User über Remote-Konsole oder SSH in unsere VM ein und nehmen dann die Installation vor:
@@ -37,6 +37,8 @@ Die folgende Anleitung setzt die Verfügbarkeit einer virtuellen Maschine zur ei
   Die so angelegten und autorisierten Benutzeraccounts können nun mittels _sudo_ Befehle mit erhöhter Berechtigung ausführen.
 
   __ACHTUNG:__ Es sollten ausschließlich Benutzeraccounts mit sicheren Passwörtern und von vertrauenswürdigen Benutzer:innen zu _sudo_ hinzugefügt werden, insbesondere wenn der Server über SSH erreichbar ist. Vor allem sollte der Benutzeraccount, unter dem die Python-Umgebung für Mortimer und Alfred läuft, nicht zur Gruppe der Sudoer gehören, auch wenn die Installation dadurch etwas umständlicher wird.
+
+## Einrichten von Debian - SSH
 
 * Als nächstes richten wir unseren _SSH_-Zugang zur VM und dem darauf
   installierten System ein, um danach nicht mehr auf die Remote-Console
@@ -168,7 +170,7 @@ Die folgende Anleitung setzt die Verfügbarkeit einer virtuellen Maschine zur ei
   #       ForceCommand cvs server
   ```
   
-  Nun sollte die VM z.B. mit Putty über den neuen Port erreichbar sein.
+  Nun sollte der Server z.B. mit Putty über den neuen Port erreichbar sein.
 
   __ACHTUNG:__ Es ist absolut nicht empfehlenswert SSH auf dem Standardport zu lassen, weil dies den Server leichter angreifbar macht. Genau so sollte generell kein Root-Zugriff mittels SSH erlaubt werden.
 
@@ -474,12 +476,12 @@ show users
 
 ### Anlegen der Datenbankuser für Mortimer und Alfred
 
-Für die Installation und den sicheren Betrieb von Alfred und Mortimer ist die Erstellung eines separaten Benutzers mit eingeschränkten Zugriffsrechten erforderlich. Mit dem Benutzer _mortimer_ wird die Erstellung und Verwaltung von Collections sowie individuellen Datenbankaccounts für Mortimer-User gesteuert:
+Für die Installation und den sicheren Betrieb von Alfred und Mortimer ist die Erstellung eines separaten Benutzers mit eingeschränkten Zugriffsrechten erforderlich. Mit dem Benutzer _mortimer-user_ wird die Erstellung und Verwaltung von Collections sowie individuellen Datenbankaccounts für Mortimer-User gesteuert:
 
 ```shell
 db.createUser(
   {
-    user: "mortimer",
+    user: "mortimer-user",
     pwd: "PASSWORD",
     roles: [ 
         { role: "userAdminAnyDatabase", db: "admin" }, 
@@ -552,7 +554,7 @@ mkdir /home/alfred/www/mortimer3
 
 __TODO:__ In diesem Verzeichnis werden zukünftig per Kommandozeile die zwei notwendigen Konfigurationsdateien für _Mortimer_ und _Alfred_ erstellt. Die _alfred.conf_ wird angepasst und bleibt im Verzeichnis, die _mortimer.conf_ wird nach der erforderlichen Anpassung nach in den Ordner _/etc_ verschoben (also /etc/mortimer.conf), wofür man sich allerdings wieder mit einem Benutzeraccount aus der Gruppe der _sudoers_ anmelden muss.
 
-Hier aktuelle Beispiele für beide Dateien vom Alfredo3 Server:
+Hier aktuelle Beispiele für beide Dateien:
 
 ### alfred.conf:
 
@@ -833,7 +835,7 @@ MONGODB_SETTINGS = {
 }
 
 ALFRED_DB = "alfred"
-ALFRED_LOGFILE = "/home/alfred/www/mortimer3/alfred.log"
+ALFRED_LOGFILE = "/home/alfred/alfred.log"
 
 # Mail settings
 MAIL_USE = True
@@ -948,33 +950,21 @@ Hier wiederum eine Standardvorlage:
 ```python
 import os
 
-os.environ["ALFRED_CONFIG_FILE"] = "/home/alfred/www/mortimer3/alfred.conf"
+os.environ["ALFRED_CONFIG_FILE"] = "/home/alfred/alfred.conf"
 
 from mortimer import create_app
 
 application = create_app()
 ```
 
-Wenn alle Konfigurationsdateien erstellt und angepasst wurden, kann die neue Mortimer-Konfiguration für den Webserver aktiviert werden, wozu wieder ein Benutzer mit erhöhten Zugriffsrechten benötigt wird. Durch einen Neustart sollte Mortimer im Anschluss erreichbar werden:
+Wenn alle Konfigurationsdateien erstellt und angepasst wurden, kann die neue Mortimer-Konfiguration für den Webserver aktualisiert werden, wozu wieder ein Benutzer mit erhöhten Zugriffsrechten benötigt wird. Durch einen Neustart sollte Mortimer im Anschluss erreichbar werden:
 
 ```bash
-sudo a2ensite mortimer3-ssl
+sudo a2dissite 000-default-le-ssl
+
+sudo a2ensite 000-default-le-ssl
 
 sudo systemctl restart apache2
 ```
 
 Mortimer sollte nun erreichbar und einsatzbereit sein.
-
-## Weitere Themen
-
-### Debian System Updaten
-
-Bei Installation neuer Software bietet sich grundsätzlich ein vorheriges System-Update an, welches mit zwei einfachen Befehlen durchgeführt werden kann (wenn kein Major Release Update ansteht):
-
-```bash
-
-apt-get update
-
-apt-get dist-upgrade
-
-```
