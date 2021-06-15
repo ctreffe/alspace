@@ -20,7 +20,6 @@ c = (a + b) / 2
 check = 1 <= c < a + b  # Das Ergebnis der Berechnung liegt zwischen zwei Grenzwerten
 
 print(check)
-
 ```
 
 Die Variable check im oberen Beispiel ergibt immer **True**. Neben der Verknüpfung mehrerer Vergleichsoperatoren in einem einzigen Vergleich lassen sich auch mehrere Vergleichsoperationen mit den Operatoren **and** und **or** miteinander verbinden:
@@ -33,7 +32,9 @@ b = random.randint(1, 100)
 
 c = (a + b) / 2
 
-check = 1 <= c and c < a + b  # Das Ergebnis der Berechnung liegt zwischen zwei Grenzwerten
+check = (
+    1 <= c and c < a + b
+)  # Das Ergebnis der Berechnung liegt zwischen zwei Grenzwerten
 
 print(check)
 ```
@@ -50,7 +51,9 @@ b = random.randint(1, 100)
 
 c = (a + b) / 2
 
-check = not (1 <= c and c < a + b)  # Das Ergebnis der Berechnung liegt zwischen NICHT zwei Grenzwerten
+check = not (
+    1 <= c and c < a + b
+)  # Das Ergebnis der Berechnung liegt zwischen NICHT zwei Grenzwerten
 
 print(check)
 ```
@@ -67,7 +70,9 @@ b = random.randint(1, 100)
 
 c = (a + b) / 2
 
-check = not 1 <= c and not c < a + b  # Das Ergebnis der Berechnung liegt zwischen NICHT zwei Grenzwerten
+check = (
+    not 1 <= c and not c < a + b
+)  # Das Ergebnis der Berechnung liegt zwischen NICHT zwei Grenzwerten
 
 print(check)
 ```
@@ -189,7 +194,6 @@ while x < 1000:
     print("Aktuelles Ergebnis: " + str(x))
     y = random.randint(1, 100)
     x = x + y
-
 ```
 
 Wenn der obige Codeblock mehrfach ausgeführt wird, sehen wir, dass die 

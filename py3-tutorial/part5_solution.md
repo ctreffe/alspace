@@ -17,7 +17,13 @@ for i in liste:
 
     correct = False
 
-    print("Bitte rechnen Sie die folgende Aufgabe: " + str(i[0]) + " + " + str(i[1]) + ": ")
+    print(
+        "Bitte rechnen Sie die folgende Aufgabe: "
+        + str(i[0])
+        + " + "
+        + str(i[1])
+        + ": "
+    )
 
     while not correct:
         eingabe = input()
@@ -48,7 +54,13 @@ for i in liste:
 
     correct = False
 
-    print("Bitte rechnen Sie die folgende Aufgabe: " + str(i[0]) + " + " + str(i[1]) + ": ")
+    print(
+        "Bitte rechnen Sie die folgende Aufgabe: "
+        + str(i[0])
+        + " + "
+        + str(i[1])
+        + ": "
+    )
 
     while not correct:
 

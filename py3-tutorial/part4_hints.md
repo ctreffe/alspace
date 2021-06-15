@@ -2,7 +2,7 @@
 
 ### Aufgabe 1
 
-* Verwenden sie eine Boolvariable für die while-Schleife. Diese muss bereits vor der Schleife mit dem Wert False
+* Verwenden Sie eine Boolvariable für die while-Schleife. Diese muss bereits vor der Schleife mit dem Wert False
   initialisiert werden
 
 ### Aufgabe 2

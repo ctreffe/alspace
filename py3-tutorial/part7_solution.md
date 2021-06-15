@@ -3,7 +3,6 @@
 
 ```python
 class Lehrveranstaltung(object):
-
     def __init__(self):
         self.kapazitaet = int
         self.anzahl_belegte_plaetze = int
@@ -11,7 +10,9 @@ class Lehrveranstaltung(object):
 
     def maximale_kapazitaet(self):
         self.kapazitaet = 30
-        print("Die Kapazität der Lehrveranstaltung beträgt " + str(self.kapazitaet) + ".")
+        print(
+            "Die Kapazität der Lehrveranstaltung beträgt " + str(self.kapazitaet) + "."
+        )
 
     def belegte_plaetze(self):
         print("Bitte geben Sie die Anzahl belegter Plätze an: ")

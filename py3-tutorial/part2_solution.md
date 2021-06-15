@@ -14,7 +14,7 @@ ergebnis = 12 + float(eingabe)
 
 # Ausgabe
 
-print("Das Ergebnis der Addition lautet: "+ str(ergebnis))
+print("Das Ergebnis der Addition lautet: " + str(ergebnis))
 print(type(ergebnis))
 ```
 
@@ -24,13 +24,13 @@ print(type(ergebnis))
 a = 5
 b = 4
 
-c = a+b
+c = a + b
 
 print("Bitte rechnen sie folgende Aufgabe: 5 + 4:")
 eingabe = input()
 
 print("Ihre Eingabe: " + eingabe)
-print("Das korrekte Ergebnis: " + str(c)) 
+print("Das korrekte Ergebnis: " + str(c))
 ```
 
 [Zurück zu Abschnitt 2](part2.md)

@@ -15,11 +15,10 @@ Wir können verschiedene Werte in Variablen speichern und damit Berechnungen dur
 Die Zuweisung von Werten zu Variablennamen erfolgt mit dem Operator **=**:
 
 ```python
-
 a = 3
 b = 2
 
-c = a+b
+c = a + b
 ```
 
 Um das Ergebnis unserer Berechnung zu betrachten, benutzen wir den bereits bekannten Befehl **print()**:
@@ -28,7 +27,7 @@ Um das Ergebnis unserer Berechnung zu betrachten, benutzen wir den bereits bekan
 a = 3
 b = 2
 
-c = a+b
+c = a + b
 
 print(c)
 ```
@@ -44,7 +43,7 @@ Hierzu verwenden wir die Funktion **str()**, die verschiedene Arten von Variable
 a = 3.5
 b = 2
 
-c = a+b
+c = a + b
 
 print("Ergebnis der Berechnung: " + str(c))
 ```

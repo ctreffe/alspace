@@ -34,7 +34,6 @@ testset.funktion_1()
 print(str(testset.Variable2))
 
 print(testset.get_variable_1())
-
 ```
 
 Im oberen Beispiel zur Erstellung einer einfachen Klasse sind mehrere Dinge zu beachten:

@@ -17,7 +17,10 @@ print("Ihre Eingabe: " + str(eingabe))
 if int(eingabe) == c:
     print("Ihre eingegebene Lösung ist korrekt!")
 else:
-    print("Leider ist die eingegebene Lösung nicht korrekt. Die korrekte Lösung lautet: " + str(c))
+    print(
+        "Leider ist die eingegebene Lösung nicht korrekt. Die korrekte Lösung lautet: "
+        + str(c)
+    )
 ```
 
 [Zurück zu Abschnitt 3](part3.md)

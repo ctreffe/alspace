@@ -68,12 +68,13 @@ Einzeilige Kommentare werden zu Beginn oder innerhalb einer Zeile mit **#** geke
 
 Neben den einzeiligen Kommentaren können auch mehrzeilige Kommentare verfasst werden.
 Mehrzeilige Kommentare können in der Form von Docstrings wie folgt gekennzeichnet werden:<br>
+
 ```python
-'''
+"""
 Dies ist ein sogenannter Docstring, welcher
 über mehrere Zeilen verlaufen kann und wie
 ein Kommentar behandelt wird.
-'''
+"""
 
 ```
 
