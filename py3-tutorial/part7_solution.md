@@ -11,7 +11,9 @@ class Lehrveranstaltung(object):
     def maximale_kapazitaet(self):
         self.kapazitaet = 30
         print(
-            "Die Kapazität der Lehrveranstaltung beträgt " + str(self.kapazitaet) + "."
+            "Die Kapazität der Lehrveranstaltung beträgt "
+            + str(self.kapazitaet)
+            + "."
         )
 
     def belegte_plaetze(self):
@@ -20,8 +22,12 @@ class Lehrveranstaltung(object):
         print("Derzeit sind " + self.anzahl_belegte_plaetze + " Plätze belegt.")
 
     def freie_plaetze(self):
-        self.anzahl_freie_plaetze = self.kapazitaet - int(self.anzahl_belegte_plaetze)
-        print("Die Anzahl an freien Plätzen beträgt: " + str(self.anzahl_freie_plaetze))
+        self.anzahl_freie_plaetze = \
+            self.kapazitaet - int(self.anzahl_belegte_plaetze)
+        print(
+            "Die Anzahl an freien Plätzen beträgt: "
+            + str(self.anzahl_freie_plaetze)
+        )
 
 
 Sozialpsychologie = Lehrveranstaltung()

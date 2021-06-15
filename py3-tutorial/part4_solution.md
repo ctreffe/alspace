@@ -10,7 +10,13 @@ b = random.randint(1, 100)
 c = a + b
 correct = False
 
-print("Bitte rechnen Sie die folgende Aufgabe: " + str(a) + " + " + str(b) + ": ")
+print(
+    "Bitte rechnen Sie die folgende Aufgabe: " 
+    + str(a) 
+    + " + " 
+    + str(b) 
+    + ": "
+)
 
 while not correct:
     eingabe = input()
@@ -20,7 +26,9 @@ while not correct:
         print("Ihre eingegebene Lösung ist korrekt!")
         correct = True
     else:
-        print("Ihre eingegebene Lösung ist falsch! Bitte versuchen sie es erneut:")
+        print(
+            "Ihre eingegebene Lösung ist falsch! Bitte versuchen sie es erneut:"
+        )
 ```
 
 ### Aufgabe 2
@@ -40,7 +48,13 @@ for i in range(int(aufgabenzahl)):
     c = a + b
     correct = False
 
-    print("Bitte rechnen Sie die folgende Aufgabe: " + str(a) + " + " + str(b) + ": ")
+    print(
+        "Bitte rechnen Sie die folgende Aufgabe: "
+        + str(a)
+        + " + "
+        + str(b)
+        + ": "
+    )
 
     while not correct:
         eingabe = input()
@@ -50,7 +64,10 @@ for i in range(int(aufgabenzahl)):
             print("Ihre eingegebene Lösung ist korrekt!")
             correct = True
         else:
-            print("Ihre eingegebene Lösung ist falsch! Bitte versuchen sie es erneut:")
+            print(
+                "Ihre eingegebene Lösung ist falsch! "
+                "Bitte versuchen sie es erneut:"
+            )
 ```
 
 [Zurück zu Abschnitt 4](part4.md)

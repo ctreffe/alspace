@@ -33,7 +33,10 @@ for i in liste:
             print("Ihre eingegebene Lösung ist korrekt!")
             correct = True
         else:
-            print("Ihre eingegebene Lösung ist falsch! Bitte versuchen Sie es erneut:")
+            print(
+                "Ihre eingegebene Lösung ist falsch! "
+                "Bitte versuchen Sie es erneut:"
+            )
 ```
 
 ### Aufgabe 2
@@ -79,7 +82,10 @@ for i in liste:
             print("Ihre eingegebene Lösung ist korrekt!")
             correct = True
         else:
-            print("Ihre eingegebene Lösung ist falsch! Bitte versuchen Sie es erneut:")
+            print(
+                "Ihre eingegebene Lösung ist falsch!  "
+                "Bitte versuchen Sie es erneut:"
+            )
 ```
 
 [Zurück zu Abschnitt 5](part5.md)

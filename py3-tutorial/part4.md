@@ -17,7 +17,8 @@ b = random.randint(1, 100)
 
 c = (a + b) / 2
 
-check = 1 <= c < a + b  # Das Ergebnis der Berechnung liegt zwischen zwei Grenzwerten
+check = 1 <= c < a + b  
+# Das Ergebnis der Berechnung liegt zwischen zwei Grenzwerten
 
 print(check)
 ```
