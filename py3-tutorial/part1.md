@@ -125,8 +125,8 @@ schließt sich.
 Die Funktion **input()** kann also unter anderem Skripte an beliebiger Stelle unterbrechen und 
 erst nach manueller Bestätigung fortsetzen.
 
-<div class="d-grid gap-2 d-md-block">
-  <a href="../py3-tutorial" class="btn btn-secondary btn-sm" tabindex="1" role="button" aria-disabled="true">Zurück zur Startseite</a>
+<div class="d-grid gap-2 d-md-flex justify-content-md-between">
+  <a href="../py3-tutorial" class="btn btn-outline-primary btn-sm" tabindex="1" role="button" aria-disabled="true">Zurück zur Startseite</a>
 
-  <a href="part2" class="btn btn-secondary btn-sm" tabindex="1" role="button" aria-disabled="true">Weiter zu Abschnitt 2</a>
+  <a href="part2" class="btn btn-primary btn-sm" tabindex="2" role="button" aria-disabled="true">Weiter zu Abschnitt 2</a>
 </div>
