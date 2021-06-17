@@ -6,8 +6,6 @@ layout: py3_tutorial
 
 ### 8.1 Dekoratoren
 
-https://codecitrus.com/python-decorator/
-
 In Python dienen Dekoratoren in der Regel dazu, Funktionen oder Klassen
 zu erweitern, ohne ihren Code selbst zu verändern. Das kann z.B. relevant
 sein, wenn die gewünschte Erweiterung in bestimmten Fällen ausgeführt
@@ -29,6 +27,9 @@ def original():
 
 outer()
 ```
+
+https://codecitrus.com/python-decorator/
+
 
 
 

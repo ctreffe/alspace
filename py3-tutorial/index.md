@@ -18,6 +18,6 @@ Weitere Informationen zu Python finden sich auf der [offiziellen Python Webseite
 
 Im folgenden Tutorial vermitteln wir alle Basiskenntnisse im Arbeiten mit Python 3, die für die Erstellung eigener Computerexperimente mit alfred3 erforderlich sind.
 
-<div class="d-grid gap-2 d-md-block">
-  <a href="part1" class="btn btn-secondary btn-sm" tabindex="1" role="button" aria-disabled="true">Mit dem Tutorial beginnen</a>
+<div class="d-grid gap-2 d-md-flex justify-content-md-center">
+  <a href="part1" class="btn btn-primary btn-sm" tabindex="1" role="button" aria-disabled="true">Mit dem Tutorial beginnen</a>
 </div>
