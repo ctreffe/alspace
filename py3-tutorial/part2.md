@@ -121,9 +121,9 @@ Ergebnis in die Konsole.**
   <a href="part2_solution" class="btn btn-secondary btn-sm" tabindex="3" role="button" aria-disabled="true">Lösungen zu den Aufgaben</a>
 </div>
 
----
+<br><br><br>
 
-<div class="d-grid gap-2 d-md-block justify-content-md-center">
+<div class="d-grid gap-2 d-md-flex justify-content-md-between">
   <a href="part1" class="btn btn-outline-primary btn-sm" tabindex="1" role="button" aria-disabled="true">Zurück zu Abschnitt 1</a>
 
   <a href="part3" class="btn btn-primary btn-sm" tabindex="4" role="button" aria-disabled="true">Weiter zu Abschnitt 3</a>
