@@ -31,7 +31,7 @@ outer()
 https://codecitrus.com/python-decorator/
 
 
-
+<!--
 
 Grundsätzlich ist ein **Decorator** eine Funktion, die eine andere Funktion als Argument entgegennimmt, 
 irgendeine Form von Funktionalität hinzufügt und dann eine andere Funktion zurückgibt, ohne dass 
@@ -71,7 +71,7 @@ def orig_func():
 
 orig_func()
 ```
-
+-->
 
 
 
