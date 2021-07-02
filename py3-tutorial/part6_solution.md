@@ -1,6 +1,32 @@
 ## Abschnitt 6: Lösungen
 ### Aufgabe 1
 
+**Aufgabenstellung**: Erstellen Sie eine Funktion, die zwei Zahlenwerte zufällig durch eine 
+der vier Grundrechenarten miteinander verknüpft. In einem Skript soll 
+ein:e Nutzer:in zunächst zwei Zahlen (mit Kontrolle auf richtige Eingabe) eingeben. 
+Diese Zahlen sollen dann die Funktion durchlaufen. Die Funktion soll mittels print() Befehl den 
+Typ der Berechnung melden und als Returnwert das Ergebnis der Berechnung 
+zurückgeben. Dieses Ergebnis soll dem:der Benutzer:in am Ende angezeigt werden.
+
+**Lösung**: Nach dem Import des Moduls `random` wird die neue, selbstgeschriebene 
+Funktion `random_rechner()` definiert. Die Funktion erhält zunächst die beiden undefinierten 
+Parameter `zahl1` und `zahl2`. Innerhalb der Funktion wird zunächst mithilfe der Funktion 
+`randint()` zufällig eine ganze Zahl zwischen 1 und 4 ausgewählt und in die Variable `selector` 
+gespeichert. Anschließend wird jeder der vier möglichen Werte der Variable `selector` innerhalb 
+des `if...elif...elif...elif`-Statements berücksichtigt. In Abhängigkeit der Zufallszahl wird ein 
+unterschiedlicher `String` mithilfe der `print()`- Funktion ausgegeben, eine der vier 
+Grundrechenarten durchgeführt und das Ergebnis anhand von `return` zurückgegeben.
+Nach der Funktionsdefinition wird eine leere Liste in der Variable `values` gespeichert, welche 
+später zum Einsatz kommt. Anschließend wird mithilfe einer `for`-Schleife zweimal um die Eingabe 
+einer Zahl gebeten. Nach jeder Eingabe erfolgt die bereits bekannte Prüfung der Eingabe. 
+Allerdings ist hinzugekommen, dass die Eingabe sofern sie ganzzahlig ist, an die zuvor erstellte 
+Liste `values` angefügt wird. Abschließend wird die zu Beginn erstellte Funktion mit den beiden in 
+der `values`-Liste gespeicherten Zahlen als Parameter aufgerufen. Da `random_rechner()` das 
+Ergebnis der Rechnung zurückgibt, wird der Wert dieser Funktion der Variable `ergebnis` zugewiesen. 
+Zum Schluss wird ein `String` mit der in einen `str`-Datentyp transformierten Variable `ergebnis` 
+ausgegeben.
+
+**Code**:
 ```python
 import random
 
@@ -47,6 +73,18 @@ print("Das Ergebnis der Berechnung: " + str(ergebnis))
 
 ### Aufgabe 2
 
+**Aufgabenstellung**: Verändern Sie das Skript aus Aufgabe zwei des vorangegangenen 
+Abschnitts so, dass die Benutzereingabe mit der anschließenden 
+Validierung (while-Schleife mit darin verschachteltem try except Block) 
+in eine Funktion ausgelagert wird, die nur eine korrekte Benutzereingabe
+zurückliefert
+
+**Lösung**: Eingangs wird die selbstgeschriebene Funktion `valid_input()` definiert. Innerhalb der 
+Funktion wird der zuvor für die Validierung geschriebene Code eingefügt. Im Falle von validen 
+Input wird dieser (in der Variable `eingabe` gespeichert) zurückgegeben. Die Funktion 
+`valid_input()` wird innerhalb der `while`-Schleife aufgerufen.
+
+**Code**:
 ```python
 import random
 
@@ -88,7 +126,7 @@ for i in liste:
 
     while not correct:
 
-        eingabe = input()
+        eingabe = valid_input()
 
         print("Ihre Eingabe: " + str(eingabe))
 

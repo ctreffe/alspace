@@ -136,14 +136,14 @@ Sie können hierfür eine for-Schleife verwenden. Lassen Sie allerdings
 die zu addierenden Zahlen nicht wie zuvor innerhalb der for-Schleife 
 erzeugen. Erzeugen Sie stattdessen eine verschachtelte Liste oder eine 
 Liste von Tupeln, die jeweils zwei Werte enthalten und iterieren Sie 
-dann über diese Liste**
+dann über diese Liste.**
 
 ### Aufgabe 2 zu Abschnitt 5
 
 **Erweitern Sie das Skript aus der ersten Aufgabe in diesem Abschnitt 
 um einen try except Block, der die Eingabe auf Gültigkeit überprüft. 
 Sollte der:die Benutzer:in keine gültige Eingabe gemacht 
-haben, soll er eine erneute Eingabe vornehmen müssen und eine 
+haben, soll er:sie eine erneute Eingabe vornehmen müssen und eine 
 entsprechende Fehlermeldung angezeigt bekommen.**
 
 <div class="d-grid gap-2 d-md-block">

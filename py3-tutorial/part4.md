@@ -224,15 +224,15 @@ while not even:
 ### Aufgabe 1 zu Abschnitt 4
 
 **Erweitern Sie das Skript aus der Aufgabe zu Abschnitt 2.2 um eine 
-while-Schleife, sodass der Benutzer seine / die Benutzerin ihre Eingabe 
-so lange wiederholen muss, bis er das korrekte Ergebnis eingegeben hat.**
+while-Schleife, sodass der:die Benutzer:in seine:ihre Eingabe so lange wiederholen muss, 
+bis er:sie das korrekte Ergebnis eingegeben hat.**
 
 ### Aufgabe 2 zu Abschnitt 4
 
 **Erweitern Sie das Skript aus der vorherigen Aufgabe um eine 
 for-Schleife, sodass der:die Benutzer:in zunächst angeben 
-muss, wie viele Aufgaben er bearbeiten möchte. In der Folge soll der:die 
-Benutzer:in dann eine entsprechende Anzahl aufgaben bearbeiten müssen. 
+muss, wie viele Aufgaben er:sie bearbeiten möchte. In der Folge soll der:die 
+Benutzer:in dann eine entsprechende Aufgabenanzahl bearbeiten müssen. 
 Alle anderen Teile des Skriptes sollen dabei bestehen bleiben.**
 
 <div class="d-grid gap-2 d-md-block">

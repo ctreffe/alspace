@@ -1,6 +1,20 @@
 ## Abschnitt 4: Lösungen
 ### Aufgabe 1
 
+**Aufgabenstellung**: Erweitern Sie das Skript aus der Aufgabe zu Abschnitt 2.2 um eine 
+while-Schleife, sodass der:die Benutzer:in seine:ihre Eingabe so lange wiederholen muss, 
+bis er:sie das korrekte Ergebnis eingegeben hat.
+
+**Lösung**: Damit die `while`-Schleife eingangs ausgeführt wird, wird die Variable `correct` 
+zunächst der Wert `False` zugewiesen. Anschließend wird nach der Ausgabe der Aufgabenstellung die 
+`while`-Schleife eingefügt. Diese wird mit dem Operator `not` versehen, weil die Schleife solange
+ausgeführt werden soll bis die Variable `correct` den Wert `True` hat. Da `correct` nur dann 
+`True` sein soll, wenn die korrekte Lösung eingegeben wurde, wird der Variable der Wert `True` 
+erst nach Zutreffen der Übereinstimmung von der korrekten Lösung (`c`) und der Benutzereingabe 
+(`eingabe`) zugewiesen. Folglich wird die `while`-Schleife nicht mehr ausgeführt, wenn die 
+korrekte Lösung eingegeben wurde.
+
+**Code**:
 ```python
 import random
 
@@ -33,6 +47,22 @@ while not correct:
 
 ### Aufgabe 2
 
+**Aufgabenstellung**: Erweitern Sie das Skript aus der vorherigen Aufgabe um eine 
+for-Schleife, sodass der:die Benutzer:in zunächst angeben 
+muss, wie viele Aufgaben er:sie bearbeiten möchte. In der Folge soll der:die 
+Benutzer:in dann eine entsprechende Aufgabenanzahl bearbeiten müssen. 
+Alle anderen Teile des Skriptes sollen dabei bestehen bleiben.
+
+**Lösung**: Um zu erfragen, wie viele Aufgaben der:die Benutzer:in bearbeiten möchte, wird 
+zunächst ein `String` mithilfe der `print()`-Funktion ausgegeben. Die Benutzereingabe wird 
+anhand der `input()`-Funktion in die Variable `aufgabenanzahl` gespeichert. Anschließend wird die 
+`for`-Schleife eingefügt. Hierbei wird die Anzahl an Wiederholungen des nachfolgenden Codeblocks 
+mithilfe der `range()`-Funktion bestimmt. Da der Codeblock so oft ausgeführt werden soll, wie 
+eingangs von dem:der Benutzer:in angegeben, soll die Wiederholungsanzahl der `aufgabenanzahl` 
+entsprechen. Da die `aufgabenanzahl` initial dem Datentyp `str` angehört, muss diese in den 
+Datentyp `int` mithilfe der `int()`-Funktion transformiert werden.
+
+**Code**:
 ```python
 import random
 

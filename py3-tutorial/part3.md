@@ -139,11 +139,11 @@ else:
 
 ### Aufgabe 1 zu Abschnitt 3
 
-**Erstellen Sie ein Skript, welches den:die Benutzer:in auffordert, zwei Zufallszahlen zwischen 1 und 100 
-zu addieren, die sie ihm anzeigen. Die Benutzereingabe soll dann mit der korrekten Lösung 
-verglichen werden. Melden Sie dem:der Benutzer:in zusammen mit seiner eigenen Eingabe zurück, 
-ob seine:ihre eingegebene Lösung korrekt ist oder nicht. Dem:Der Benutzer:in soll die korrekte Lösung ebenfalls 
-angezeigt werden.**
+**Erstellen Sie ein Skript, welches den:die Benutzer:in auffordert, zwei 
+angezeigte Zufallszahlen zwischen 1 und 100 zu addieren. Die Benutzereingabe soll dann 
+mit der korrekten Lösung verglichen werden. Melden Sie dem:der Benutzer:in zusammen mit 
+seiner:ihrer eigenen Eingabe zurück, ob seine:ihre eingegebene Lösung korrekt ist oder nicht. 
+Dem:Der Benutzer:in soll die korrekte Lösung ebenfalls angezeigt werden.**
 
 <div class="d-grid gap-2 d-md-block">
   <a href="part3_hints" class="btn btn-secondary btn-sm" tabindex="2" role="button" aria-disabled="true">Hinweise zu den Aufgaben</a>

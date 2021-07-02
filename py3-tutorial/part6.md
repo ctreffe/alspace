@@ -99,15 +99,14 @@ trenner()
 
 **Erstellen Sie eine Funktion, die zwei Zahlenwerte zufällig durch eine 
 der vier Grundrechenarten miteinander verknüpft. In einem Skript soll 
-ein Nutzer / eine Nutzerin zunächst zwei Zahlen 
-(mit Kontrolle auf richtige Eingabe) eingeben. Diese Zahlen sollen dann 
-die Funktion durchlaufen. Die Funktion soll mittels print() Befehl den 
+ein:e Nutzer:in zunächst zwei Zahlen (mit Kontrolle auf richtige Eingabe) eingeben. 
+Diese Zahlen sollen dann die Funktion durchlaufen. Die Funktion soll mittels print() Befehl den 
 Typ der Berechnung melden und als Returnwert das Ergebnis der Berechnung 
 zurückgeben. Dieses Ergebnis soll dem:der Benutzer:in am Ende angezeigt werden.**
 
 ### Aufgabe 2 zu Abschnitt 6
 
-**Verändern sie das Skript aus Aufgabe zwei des vorangegangenen 
+**Verändern Sie das Skript aus Aufgabe zwei des vorangegangenen 
 Abschnitts so, dass die Benutzereingabe mit der anschließenden 
 Validierung (while-Schleife mit darin verschachteltem try except Block) 
 in eine Funktion ausgelagert wird, die nur eine korrekte Benutzereingabe
