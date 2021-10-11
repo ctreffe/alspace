@@ -17,13 +17,18 @@ b = random.randint(1, 100)
 
 c = (a + b) / 2
 
+# Prüfen, ob 1 kleiner gleich c ist und ob c kleiner als die Summe von a und b ist
 check = 1 <= c < a + b  
-# Das Ergebnis der Berechnung liegt zwischen zwei Grenzwerten
+# Das Ergebnis der Berechnung liegt zwischen den beiden Grenzwerten
 
 print(check)
 ```
 
-Die Variable check im oberen Beispiel ergibt immer **True**. Neben der Verknüpfung mehrerer Vergleichsoperatoren in einem einzigen Vergleich lassen sich auch mehrere Vergleichsoperationen mit den Operatoren **and** und **or** miteinander verbinden:
+Die Variable check im oberen Beispiel ergibt immer **True**. Das bedeutet, dass das Ergebnis der 
+Berechnung (= c) stets größer gleich eins ist und kleiner als die Summe von a und b.
+
+Neben der Verknüpfung mehrerer Vergleichsoperatoren in einem einzigen Vergleich lassen sich auch 
+mehrere Vergleichsoperationen mit den Operatoren **and** und **or** miteinander verbinden:
 
 ```python
 import random
@@ -33,9 +38,8 @@ b = random.randint(1, 100)
 
 c = (a + b) / 2
 
-check = (
-    1 <= c and c < a + b
-)  # Das Ergebnis der Berechnung liegt zwischen zwei Grenzwerten
+check = (1 <= c and c < a + b)  
+# Das Ergebnis der Berechnung liegt zwischen zwei Grenzwerten
 
 print(check)
 ```
@@ -52,9 +56,8 @@ b = random.randint(1, 100)
 
 c = (a + b) / 2
 
-check = not (
-    1 <= c and c < a + b
-)  # Das Ergebnis der Berechnung liegt zwischen NICHT zwei Grenzwerten
+check = not (1 <= c and c < a + b)  
+# Das Ergebnis der Berechnung liegt NICHT zwischen zwei Grenzwerten
 
 print(check)
 ```
@@ -71,9 +74,8 @@ b = random.randint(1, 100)
 
 c = (a + b) / 2
 
-check = (
-    not 1 <= c and not c < a + b
-)  # Das Ergebnis der Berechnung liegt zwischen NICHT zwei Grenzwerten
+check = (not 1 <= c and not c < a + b)  
+# Das Ergebnis der Berechnung liegt NICHT zwischen zwei Grenzwerten
 
 print(check)
 ```
@@ -223,9 +225,10 @@ while not even:
 
 ### Aufgabe 1 zu Abschnitt 4
 
-**Erweitern Sie das Skript aus der Aufgabe zu Abschnitt 2.2 um eine 
+**Erweitern Sie das Skript aus der Aufgabe 2 zu Abschnitt 2 um eine 
 while-Schleife, sodass der:die Benutzer:in seine:ihre Eingabe so lange wiederholen muss, 
-bis er:sie das korrekte Ergebnis eingegeben hat.**
+bis er:sie das korrekte Ergebnis eingegeben hat. Die Variablen a und b sollen ganzzahligen 
+Zufallszahlen zwischen 1 und 100 entsprechen.**
 
 ### Aufgabe 2 zu Abschnitt 4
 

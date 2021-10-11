@@ -1,9 +1,10 @@
 ## Abschnitt 4: Lösungen
 ### Aufgabe 1
 
-**Aufgabenstellung**: Erweitern Sie das Skript aus der Aufgabe zu Abschnitt 2.2 um eine 
+**Aufgabenstellung**: Erweitern Sie das Skript aus der Aufgabe 2 zu Abschnitt 2 um eine 
 while-Schleife, sodass der:die Benutzer:in seine:ihre Eingabe so lange wiederholen muss, 
-bis er:sie das korrekte Ergebnis eingegeben hat.
+bis er:sie das korrekte Ergebnis eingegeben hat. Die Variablen a und b sollen ganzzahligen 
+Zufallszahlen zwischen 1 und 100 entsprechen.
 
 **Lösung**: Damit die `while`-Schleife eingangs ausgeführt wird, wird die Variable `correct` 
 zunächst der Wert `False` zugewiesen. Anschließend wird nach der Ausgabe der Aufgabenstellung die 
@@ -25,11 +26,7 @@ c = a + b
 correct = False
 
 print(
-    "Bitte rechnen Sie die folgende Aufgabe: " 
-    + str(a) 
-    + " + " 
-    + str(b) 
-    + ": "
+    "Bitte rechnen Sie die folgende Aufgabe: " + str(a) + " + " + str(b) + ": "
 )
 
 while not correct:
@@ -79,11 +76,7 @@ for i in range(int(aufgabenzahl)):
     correct = False
 
     print(
-        "Bitte rechnen Sie die folgende Aufgabe: "
-        + str(a)
-        + " + "
-        + str(b)
-        + ": "
+    "Bitte rechnen Sie die folgende Aufgabe: " + str(a) + " + " + str(b) + ": "
     )
 
     while not correct:
@@ -95,8 +88,7 @@ for i in range(int(aufgabenzahl)):
             correct = True
         else:
             print(
-                "Ihre eingegebene Lösung ist falsch! "
-                "Bitte versuchen sie es erneut:"
+                "Ihre eingegebene Lösung ist falsch! Bitte versuchen sie es erneut:"
             )
 ```
 

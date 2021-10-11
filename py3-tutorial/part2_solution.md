@@ -10,7 +10,7 @@ Ergebnisses mit der Funktion print() aus.
 Aufruf der `input()`-Funktion wird der Programmlauf solange gestoppt, bis der:die 
 Benutzer:in eine Eingabe über die Tastatur tätigt und auf Enter klickt. Diese 
 Benutzereingabe wird in der Variable `eingabe` gespeichert. Damit User 
-wissen, dass sie eine Eingabe tätigen müssen, wird zuvor durch die `print()`-Funktion 
+wissen, dass Sie eine Eingabe tätigen müssen, wird zuvor durch die `print()`-Funktion 
 der `String` "Bitte eine Zahl eingeben: " ausgegeben.
 Da die Benutzereingabe standardmäßig als `String` gespeichert wird und Python nur mit 
 numerischen Variablen rechnen kann, muss bei der Berechnung des Ergebnisses die 
@@ -49,7 +49,7 @@ Ergebnisses auf. Geben Sie sowohl das eingegebene Ergebnis als auch das tatsäch
 Ergebnis in die Konsole.
 
 **Lösung**: Eingangs werden zwei beliebige Ganzzahlen in den Variablen `a` und `b` 
-gespeichert.Um später abzugleichen, ob das korrekte Ergebnis von dem:der Benutzer:in 
+gespeichert. Um später abzugleichen, ob das korrekte Ergebnis von dem:der Benutzer:in 
 berechnet wurde, wird das korrekte Ergebnis der Addition von `a` und `b` in der 
 Variable `c` gespeichert. Anschließend wird die Aufforderung zur Berechnung der Aufgabe 
 mithilfe der `print()`-Funktion ausgegeben. Daraufhin wird auf die Eingabe des:der 

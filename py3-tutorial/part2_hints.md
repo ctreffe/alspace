@@ -2,9 +2,9 @@
 
 ### Aufgabe 1
 
-* Sie können eine Benutzereingabe mit der Funktion **raw_input()** erfassen, die Ihnen bereits bekannt ist. Das
+* Sie können eine Benutzereingabe mit der Funktion **input()** erfassen, die Ihnen bereits bekannt ist. Das
   Ergebnis dieser Funktion können Sie in eine Variable speichern
-* Das Ergebnis von **raw_input()** ist ein String, den Sie in eine Zahl umwandeln müssen
+* Das Ergebnis von **input()** ist ein String, den Sie in eine Zahl umwandeln müssen
 * Die Funktion **type()** liefert Ihnen den Variablentyp beliebiger Variablen zurück
 * Sie können die Funktion **print()** auch mehrfach verwenden, um unterschiedliche Teilergebnise in die Konsole zu
   schreiben

@@ -111,7 +111,7 @@ diesem Zwecke können wir einen **try except** Codeblock verwenden, der
 ähnlich funktioniert wie eine **if else** Verzweigung:
 
 ```python
-print("Bitte geben sie eine Zahl ein:")
+print("Bitte geben Sie eine Zahl ein:")
 
 eingabe = input()
 

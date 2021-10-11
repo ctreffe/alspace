@@ -15,6 +15,8 @@ werden. Anschließend wird eine Liste von Tupeln erstellt und in der Variable `l
 Ein Tupel umfasst innerhalb der `liste` immer zwei der zu Beginn erzeugten Zufallszahlen.
 Anschließend wird mithilfe einer `for`-Schleife festgelegt, dass der nachfolgende Codeblock so oft 
 ausgeführt werden soll, wie die `liste` Elemente beinhaltet (insgesamt drei Tupel, also drei mal). 
+Explizit bedeutet `for i in liste:` hierbei für jeden Tupel in der Liste. Die Variable `i` kann 
+hierbei beliebig gewählt werden. Beispielsweise würde auch `for tupel in liste:` funktionieren.
 Anschließend wird der bereits bekannte Code eingefügt. Hierbei ist zu beachten, dass auf die 
 einzelnen Zufallszahlen auf eine spezifische Art und Weise zugegriffen werden muss. Beispielsweise 
 kann auf die erste Zahl des Tupels in dieser Form zugegriffen werden: `i[0]`. Auf die zweite Zahl, 
@@ -22,10 +24,13 @@ die sich im Tupel befindet, kann in dieser Form zugegriffen werden: `i[1]`. Die 
 über die `for`-Schleife hinweg iteriert, sodass sie bei der ersten Durchführung dem Wert 0 hat, bei 
 der zweiten Durchführung den Wert 1 hat und bei der dritten Durchführung den Wert 2 hat. Folglich 
 wird beim ersten Durchlauf auf den ersten Tupel, beim zweiten Durchlauf auf den zweiten Tupel und 
-beim dritten Durchlauf auf den dritten Tupel der `liste` zugegriffen. Da das korrekte Ergebnis 
-nicht wie zuvor in einer eigenen Variable gespeichert wurde, wird es innerhalb des `if`-Statements 
-berechnet. Wie bei den vorherigen Aufgaben ist zu beachten, dass die Zufallszahlen vom Datentyp 
-`int` in den Datentyp `str` transformiert werden müssen, um sie auszugeben.
+beim dritten Durchlauf auf den dritten Tupel der `liste` zugegriffen. Konkret bedeutet dies z.B. 
+unter Annahme der `liste = [(1, 10), (20, 5), (18, 99)]`, dass bei dem ersten Durchlauf der 
+for-Schleife auf die Elemente `0[0]` und `0[1]` zugegriffen wird. Diese entsprächen `1` und `10`. 
+Da das korrekte Ergebnis nicht wie zuvor in einer eigenen Variable gespeichert wurde, wird es 
+innerhalb des `if`-Statements berechnet. Wie bei den vorherigen Aufgaben ist zu beachten, dass die 
+Zufallszahlen vom Datentyp `int` in den Datentyp `str` transformiert werden müssen, um sie 
+auszugeben.
 
 **Code**:
 ```python
@@ -44,13 +49,7 @@ for i in liste:
 
     correct = False
 
-    print(
-        "Bitte rechnen Sie die folgende Aufgabe: "
-        + str(i[0])
-        + " + "
-        + str(i[1])
-        + ": "
-    )
+    print("Bitte rechnen Sie die folgende Aufgabe: " + str(i[0]) + " + " + str(i[1]) + ": ")
 
     while not correct:
         eingabe = input()
@@ -60,10 +59,7 @@ for i in liste:
             print("Ihre eingegebene Lösung ist korrekt!")
             correct = True
         else:
-            print(
-                "Ihre eingegebene Lösung ist falsch! "
-                "Bitte versuchen Sie es erneut:"
-            )
+            print("Ihre eingegebene Lösung ist falsch! Bitte versuchen Sie es erneut:")
 ```
 
 ### Aufgabe 2
@@ -100,13 +96,7 @@ for i in liste:
 
     correct = False
 
-    print(
-        "Bitte rechnen Sie die folgende Aufgabe: "
-        + str(i[0])
-        + " + "
-        + str(i[1])
-        + ": "
-    )
+    print("Bitte rechnen Sie die folgende Aufgabe: " + str(i[0]) + " + " + str(i[1]) + ": ")
 
     while not correct:
 
@@ -125,10 +115,7 @@ for i in liste:
             print("Ihre eingegebene Lösung ist korrekt!")
             correct = True
         else:
-            print(
-                "Ihre eingegebene Lösung ist falsch!  "
-                "Bitte versuchen Sie es erneut:"
-            )
+            print("Ihre eingegebene Lösung ist falsch! Bitte versuchen Sie es erneut:")
 ```
 
 [Zurück zu Abschnitt 5](part5.md)
