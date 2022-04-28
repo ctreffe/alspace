@@ -328,6 +328,72 @@ Die folgende Anleitung setzt die Verfügbarkeit eis Servers mit aktueller Debian
 
   Die so angepasste Konfigurationsdatei können wir in der Folge für die Einrichtung aller weiteren Funktionen verwenden.
 
+### Logrotate für Apache 2 richtig konfigurieren
+
+Das unter Debian vorinstallierte Tool _logrotate_ sorgt dafür, dass Logfiles nicht zu
+groß werden, indem es zu vorgegebenen Zeitpunkten ein neues, leeres Logfile erstellt und
+das bestehende Logfile archiviert. Standardmäßig ist _logrotate_ für Apache 2 unter
+Debian vorkonfiguriert, die Konfigurationsdatei findet sich unter:
+
+```bash
+/etc/logrotate.d/apache2
+```
+
+Die Defaultkonfiguration sieht derzeit so aus:
+
+```bash
+/var/log/apache2/*.log {
+        daily
+        missingok
+        rotate 14
+        compress
+        delaycompress
+        notifempty
+        create 640 root adm
+        sharedscripts
+        postrotate
+                if invoke-rc.d apache2 status > /dev/null 2>&1; then \
+                    invoke-rc.d apache2 reload > /dev/null 2>&1; \
+                fi;
+        endscript
+        prerotate
+                if [ -d /etc/logrotate.d/httpd-prerotate ]; then \
+                        run-parts /etc/logrotate.d/httpd-prerotate; \
+                fi; \
+        endscript
+}
+```
+
+Im _postrotate_ Hook sehen wir, dass der Apache 2 Server nach einer Logrotation neu
+geladen wird. Da die Rotation täglich stattfindet, wird der Apache Server jeden Tag
+gegen Mitternacht neu gestartet. Dies kann durchaus erwünschtes Verhalten sein, aber
+durch den Serverneustart werden bestehende Alfred-Sessions mit einer Fehlermeldung (412
+Precondition Failed) abgebrochen.
+
+Soll der Apache Server nicht jeden Tag gegen Mitternacht neugestartet werden, sollte die
+Konfigurationsdatei angepasst werden (siehe auch [diese Anleitung](https://www.tecmint.com/install-logrotate-to-manage-log-rotation-in-linux/) und [diesen Beitrag](https://unix.stackexchange.com/questions/47688/how-to-avoid-apache-reload-when-rotating-logs)):
+
+```bash
+/var/log/apache2/*.log {
+        daily
+        copytruncate
+        missingok
+        rotate 14
+        compress
+        delaycompress
+        notifempty
+        sharedscripts
+        prerotate
+                if [ -d /etc/logrotate.d/httpd-prerotate ]; then \
+                        run-parts /etc/logrotate.d/httpd-prerotate; \
+                fi; \
+        endscript
+}
+```
+
+Auf diese Art und Weise (mit _copytruncate_ und ohne _postrotate_) wird der Apache nach
+der täglichen Logrotation nicht neu gestartet.
+
 ## Installation und Einrichtung der MongoDB
 
 Anleitung für die Installation unter Debian:
@@ -968,3 +1034,4 @@ sudo systemctl restart apache2
 ```
 
 Mortimer sollte nun erreichbar und einsatzbereit sein.
+
